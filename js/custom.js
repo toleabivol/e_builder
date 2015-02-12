@@ -303,7 +303,6 @@ jQuery(document).ready(function($) {
 		//image-bg-picker
 		if($(this).find('.image_bg').length){
 			$('.bg-activate').prop('checked', true);
-			console.log('lala')
 			$('#element-bg-picker').val($(this).find('.image_bg').css('background-image').replace(/"/g,"").replace(/url\(|\)$/ig, ""));
 		}else{
 			$('.bg-activate').prop('checked', false)
@@ -682,7 +681,6 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.builder-container').imagesLoaded( function() {
-		console.log('now')
 		preloader.off();
 		$('.top-nav-bar').height(40)
 	})
