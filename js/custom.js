@@ -302,7 +302,8 @@ jQuery(document).ready(function($) {
 		$('#background-item-control-input').data('auto-color',false);//for undo fine tunning
 		//image-bg-picker
 		if($(this).find('.image_bg').length){
-			$('.bg-activate').prop('checked', true)
+			$('.bg-activate').prop('checked', true);
+			console.log('lala')
 			$('#element-bg-picker').val($(this).find('.image_bg').css('background-image').replace(/"/g,"").replace(/url\(|\)$/ig, ""));
 		}else{
 			$('.bg-activate').prop('checked', false)
@@ -680,6 +681,22 @@ jQuery(document).ready(function($) {
 		$('.tooltip-hint').hide();
 	}
 
+	$('.builder-container').imagesLoaded( function() {
+		console.log('now')
+		preloader.off();
+		$('.top-nav-bar').height(40)
+	})
+	var preloader = new $.materialPreloader({
+        position: 'top',
+        height: '5px',
+        col_1: '#159756',
+        col_2: '#da4733',
+        col_3: '#1fb5ad',
+        col_4: '#fdba2c',
+        fadeIn: 200,
+        fadeOut: 200
+    })
+	preloader.on()
 });
 
 

@@ -21,6 +21,7 @@
 		<link rel='stylesheet' type='text/css' href='http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css'>
 		<link rel='stylesheet' type='text/css' href='css/iris.min.css'>
 		<link rel="stylesheet" type='text/css' href="css/tinyeditor.css">
+		<link rel="stylesheet" type='text/css' href="css/materialPreloader.min.css">
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
 
 <!-- fonts used for mails -->
@@ -50,6 +51,7 @@
 	</head>
 	<body>
 		<div id="mask"></div>
+		<div id="fakeLoader"></div>
 		<div class='left-nav-container open-left-menu'>
 			<a href='#' class='trigger-menu'></a>
 			<header class='left-nav-fixed'>
@@ -247,6 +249,8 @@
 		<script type='text/javascript' src="js/iris.min.js"></script>
 		<script type='text/javascript' src="js/tiny.editor.packed.js"></script>
 		<script type='text/javascript' src="js/jquery.cookie.js"></script>
+		<script type='text/javascript' src="js/imagesloaded.pkgd.min.js"></script>
+		<script type='text/javascript' src="js/materialPreloader.min.js"></script>
 		<script type='text/javascript' src='js/custom.js'></script>
 	</body>
 </html>
