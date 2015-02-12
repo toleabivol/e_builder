@@ -1,0 +1,23 @@
+{
+	"title":"Flattr - Corporate Clear Responsive Email Template",
+	"link":"http://themeforest.net/item/flattr-flat-corporation-email-template/5037805?ref=am_themes",
+	"colorpickers" : {
+		"Primary Color" : [{".main_color":"background-color"},"#e67e22"],
+		"Primary Color 2" : [{".main_color2":"background-color"},"#1c2335"],
+		"Text Color": [{".text_color":"color"},"#394041"],
+		"Heading Color":[{".heading_color":"color"},"#e67e22"],
+		"Button Text Color":[{".button":"color"},"#ffffff"],
+		"Button 1 Color":[{".but_bgcol_1":"background-color"},"#242e39"],
+		"Button 2 Color":[{".but_bgcol_2":"background-color"},"#e67e22"]
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","10","4","1"],
+		"Button Width" : [".button","width","px","80","200","100","5"],
+		"Button Height" : [".button","height","px","20","60","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"],
+		"Spacing Height" : [".space_height","height","px","10","100","40","10"]
+	},
+	"purchase_codes":["test_purchase_si","1357-2468-9147-0381"],
+	"header_color":"#ccc"
+}

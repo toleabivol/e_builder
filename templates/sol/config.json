@@ -1,0 +1,24 @@
+{
+	"title":"Sol - Tourism / Vacation / Travel Responsive Email",
+	"link":"http://themeforest.net/item/sol-travel-email-builder-editor-access/8206679?ref=am_themes",
+	"colorpickers" : {
+		"Primary Color" : [{".main_color_bg":"background-color"},{".main_color_text":"color"},"#32b7c5"],
+		
+		"Button Bg Color" : [{".button":"background-color"},"#fcba54"],
+		
+		"Button Txt Color" : [{".button a":"color"},"#ffffff"],
+		
+		"Light Txt Color" : [{".light_text":"color"},"#6e6e6e"],
+		
+		"Dark Txt Color" : [{".dark_text":"color"},"#333333"]
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","10","4","1"],
+		"Button Width" : [".button","width","px","80","400","200","5"],
+		"Button Height" : [".button","height","px","40","100","30","5"]
+	},
+	"purchase_codes":["test_purchase_si","sol_special_offer_310720142112"],
+	"header_color":"#ccc",
+	"def_layout":"full"
+}
