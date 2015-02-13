@@ -32,12 +32,12 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 		<!-- ends fonts used for mails -->
 
-
 		<script type="text/javascript">
 			var template ='<?php echo isset($template) ? $template : "false" ?>';
 			var def_layout = <?php echo !empty( $config->def_layout ) ? "'{$config->def_layout}'" : "false"?>;
 			var responsive_tablet = <?php echo !empty( $config->responsive_tablet ) ? "'{$config->responsive_tablet}'" : "false"?>;
 			var boxed_width = '<?php echo !empty( $config->boxed_width ) ? "{$config->boxed_width}" : "600px"?>';
+			var template_v = '<?php echo !empty($_GET['v']) ? $_GET['v'] : '0' ?>'
 		</script>
 		<?php if(!empty( $config->boxed_width  )) : 
 		$boxed_width = (int)$config->boxed_width === 600 ? '615px' : $config->boxed_width;
@@ -63,7 +63,7 @@
 				<nav>
 					<ul id='accordion-menu'>
 						<li class='options-list upper-items'>
-							<a href='#'>Options</a>
+							<a href='#'>Save / Load</a>
 							<ul class='block-list'>
 								<li>
 									<p class="token-save"></p>
