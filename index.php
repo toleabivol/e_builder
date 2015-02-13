@@ -23,7 +23,7 @@
 		<link rel="stylesheet" type='text/css' href="css/tinyeditor.css">
 		<link rel="stylesheet" type='text/css' href="css/materialPreloader.min.css">
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
-
+		<title>SnoopyIndustries Email Builder</title>
 		<!-- fonts used for mails -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,300italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
