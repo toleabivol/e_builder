@@ -3,6 +3,7 @@ session_start();
 $html = $_POST['html'];
 $template = $_POST['template'];
 $solution = $_POST['solution'];
+$bg_image = !empty($_POST['bg_image']) ? $_POST['bg_image'] : false;
 
 $config = json_decode(file_get_contents("templates/".$_POST['template']."/config.json"));
 $filename = explode(' ',trim($config->title));
@@ -55,7 +56,8 @@ if( $solution == 'mailchimp' ){
 //Solutions END============================
 
 $head = file_get_contents('templates/' . $template . '/html/head.html');
-
+if($bg_image)
+	$head = preg_replace('@background-image: url\([\'"](.*?)[\'"]\)@is',"background-image: url('$bg_image')",$head);
 //headers
 header ("Content-Type: text/html");
 header ("Content-disposition: attachment; filename=".$filename);?>

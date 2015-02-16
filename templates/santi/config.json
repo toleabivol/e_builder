@@ -25,5 +25,6 @@
 	"purchase_codes":["test_purchase_si"],
 	"header_color":"#ccc",
 	"def_layout":"full",
-	"boxed_width":"700px"
+	"boxed_width":"700px",
+	"bg_image":true
 }

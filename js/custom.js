@@ -642,11 +642,13 @@ jQuery(document).ready(function($) {
 				$('.item-controls-wrap,.item-toggle-wrap,.edit-text-wrapper,.edit-image-wrapper,.edit-link-wrapper').appendTo('.builder-container > div');
 				var html = $('.builder-container > div > ul').html();
 				$('#builder-html').remove();
+				var bg_image = $('.bg-image-input').val();
 				var url = 'download.php';
 				var form = $('<form action="' + url + '" method="post" id="builder-html">' +
 				  '<textarea id="html-container-before-download" name="html"></textarea>' +
 				  '<input type="hidden" name="template" value="'+template+'">' +
 				  '<input type="hidden" name="solution" value="'+solution+'">' +
+				  '<input type="hidden" name="bg_image" value="'+bg_image+'">' +
 				  '</form>');
 				$('body').append(form);
 
@@ -667,7 +669,7 @@ jQuery(document).ready(function($) {
 		
 	});
 
-	//Tooltip cookie--------------
+	
 	//=================Tooltip======================================
 	$('.close-tooltip').click(function() {
 		var toolTip = $('.tooltip-hint');
@@ -678,6 +680,15 @@ jQuery(document).ready(function($) {
 	if($.cookie('si-tooltip')){
 		$('.tooltip-hint').hide();
 	}
+	//================Rate me popup===================================
+	var rate_popup = setTimeout(function(){
+			if( !$.cookie('si-builder-rated') && $.cookie('si-builder-ignored') ){
+				console.log('show popup');
+			}
+		},1800000);
+	$('.rate-now').click(function(){
+		
+	});
 	//===============template versioning=================================
 	if(template_v !== '0'){
 		$('.email-element').each(function(index,element){
@@ -706,6 +717,11 @@ jQuery(document).ready(function($) {
         fadeOut: 200
     })
 	preloader.on()
+
+	//================General BG image==================================
+	$('.bg-image-input').on('input',function(){
+		$('.builder-container > div').css('background-image',"url("+$(this).val()+")");
+	});
 
 });
 

@@ -1689,10 +1689,13 @@ height:15px;
 	background-position: -107px -28px;
 }
 
-
 .ui-sortable-placeholder{
 	border: 1px dashed #1fb5ad;
 	max-width: none;
 	margin: 0;
 	visibility: visible !important;
+}
+
+#accordion-menu > li.style-list li .menu-input-input.bg-image-input{
+	width: 100%;
 }
