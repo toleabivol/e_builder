@@ -36,7 +36,7 @@ function colorpickersInit(){
 						var properties_array = properties_string.split(',');
 						$.each(selectors_array,function(ss_index,single_selector){
 							$.each(properties_array,function(p_index,single_property){
-								$(".builder-container table " + single_selector).css(single_property,color);
+								$(".builder-container " + single_selector).css(single_property,color);
 								console.log(single_selector,single_property);
 							});
 						});
@@ -643,12 +643,14 @@ jQuery(document).ready(function($) {
 				var html = $('.builder-container > div > ul').html();
 				$('#builder-html').remove();
 				var bg_image = $('.bg-image-input').val();
+				var bg_color = $('.menu-input-input.color-picker-input').eq(0).val();
 				var url = 'download.php';
 				var form = $('<form action="' + url + '" method="post" id="builder-html">' +
 				  '<textarea id="html-container-before-download" name="html"></textarea>' +
 				  '<input type="hidden" name="template" value="'+template+'">' +
 				  '<input type="hidden" name="solution" value="'+solution+'">' +
 				  '<input type="hidden" name="bg_image" value="'+bg_image+'">' +
+				  '<input type="hidden" name="bg_color" value="'+bg_color+'">' +
 				  '</form>');
 				$('body').append(form);
 

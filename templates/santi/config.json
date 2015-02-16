@@ -2,6 +2,8 @@
 	"title":"Santi - Corporate Responsive Email Template",
 	"link":"http://themeforest.net/item/santi-responsive-email-themebuilder-access/8168549?ref=am_themes",
 	"colorpickers" : {
+		"BG Color" : [{"> div":"background-color"},"#e64912"],
+
 		"Primary Color 1" : [{".primary1_bg":"background-color"},{".primary1_color":"color"},{".primary1_border":"border-color"},"#e64912"],
 		
 		"Primary Color 2" : [{".primary2_bg":"background-color"},{".primary2_color":"color"},{".primary2_border":"border-color"},"#e64912"],
