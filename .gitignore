@@ -1,4 +1,4 @@
 .htaccess
-/cache
-/templates
+/cache/*
+/templates/*
 error_log

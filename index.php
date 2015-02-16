@@ -80,6 +80,12 @@
 							<a href='#'>Style</a>
 							<ul>
 								<li>
+									<a href="#">Background Image</a>
+									<div class="menu-input">
+										<input type='text' class='menu-input-input bg-image-input' placeholder="http://yourdomain.com/image.jpg">
+									</div>
+								</li>
+								<li>
 									<a href='#'>Colors</a>
 									<?php foreach ($config->colorpickers as $name => $colorpicker) : 
 										$def_color = array_pop($colorpicker);

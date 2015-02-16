@@ -1,7 +1,7 @@
 <?php
 
 $TF_config['username'] = 'SnoopyIndustries';
-$TF_config['api_key'] = 'kwz7cj0o94vy9zyj4ldxmlgfqhx0o5nt';
+$TF_config['api_key'] = 'j5oihtyrbk6g8aq15av1n1vjm3ungm8q';
 
 //Dev
 /*$host = 'localhost';
@@ -13,5 +13,5 @@ $database = 'e_builder';*/
 
 $host = 'localhost';
 $username = 'transfer';
-$password = '12sidev12';
+$password = '12SIdev12';
 $database = 'transfer_amthemes_builder_save_data';
