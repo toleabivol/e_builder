@@ -1700,12 +1700,75 @@ height:15px;
 	width: 100%;
 }
 
+/*
+**************
+Rate
+**************
+*/
 .rate-popup{
 	position: fixed;
-	top: 50px;
-	left: 30%;
-	background: #ccc;
-	padding: 20px;
+	top: 25%;
+	left: 40%;
+	background: #1fb5ad;
+	padding: 20px 20px;
 	z-index: 99999999;
 	display: none;
+	color: #ffffff !important;
+	border-radius: 5px;
+	box-shadow: 2px 2px 30px #000000;
+	text-align:center;
+	width: 600px;
+}
+
+.rate-close {
+	float: right;
+}
+
+.rate-go {
+	width: 150px;
+	color: #ffffff;
+	background-color: #7dd300;
+	height: 40px;
+	border-radius: 5px;
+	text-align:center;
+	display: block;
+	float: left;
+	line-height: 40px;
+	margin-right: 20px;
+}
+.rate-later {
+	width: 150px;
+	color: #ffffff;
+	background-color: #a7a7a8;
+	height: 40px;
+	border-radius: 5px;
+	text-align:center;
+	display: block;
+	float: left;
+	line-height: 40px;
+	margin-right: 20px;
+}
+.rate-never {
+	width: 150px;
+	color: #ffffff;
+	background-color: #f00;
+	height: 40px;
+	border-radius: 5px;
+	text-align:center;
+	display: block;
+	float: left;
+	line-height: 40px;
+}
+.rate-actions {
+	margin: 20px auto 20px;
+	display: inline-block;
+}
+.clearfix {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+h5 {
+    font-size: 14px;
+    line-height: 20px;
 }
