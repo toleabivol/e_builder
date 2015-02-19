@@ -689,12 +689,12 @@ jQuery(document).ready(function($) {
 			clearInterval(popup_interval)
 		}
 	}
-	var popup_interval = setInterval(rate_popup,2000);//1800000
+	var popup_interval = setInterval(rate_popup,1800000);//30min
 
 	$('.rate-later,.rate-close').click(function(event){
 		event.preventDefault();
 		$('.rate-popup').fadeOut('slow');
-		popup_interval = setInterval(rate_popup,2000);
+		popup_interval = setInterval(rate_popup,1800000);
 		return false;
 	});
 	$('.rate-never').click(function(event){
