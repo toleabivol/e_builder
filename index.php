@@ -79,12 +79,15 @@
 						<li class='style-list upper-items'>
 							<a href='#'>Style</a>
 							<ul>
-								<li>
-									<a href="#">Background Image</a>
-									<div class="menu-input">
-										<input type='text' class='menu-input-input bg-image-input' placeholder="http://yourdomain.com/image.jpg">
-									</div>
-								</li>
+								<?php if(!empty($config->bg_image)) : ?>
+									<li>
+										<a href="#">Background Image</a>
+										<div class="menu-input">
+											<input type='text' class='menu-input-input bg-image-input' placeholder="http://yourdomain.com/image.jpg">
+											<button class="remove-bg-image">Remove Bg Image</button>
+										</div>
+									</li>
+								<?php endif; ?>
 								<li>
 									<a href='#'>Colors</a>
 									<?php foreach ($config->colorpickers as $name => $colorpicker) : 
@@ -246,7 +249,18 @@
 				<button class="close-tooltip">Thanks for the tip</button>
 			</div>
 		</div>
-
+		<?php if($template==='santi') : ?>
+		<div class="rate-popup">
+			<span class="rate-close">x</span>
+			<h3>Are you happy with our item ?</h3>
+			<h5>Please give us a rate</h5>
+			<div class="rate-actions">
+				<a href="http://themeforest.net/downloads" class="rate-go" target="_blank">Rate</a>
+				<a href="#" class="rate-later">Later</a>
+				<a href="#" class="rate-never">Never</a>
+			</div>
+		</div>
+		<?php endif; ?>
 		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 		<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js'></script>
 		<script type='text/javascript' src='js/menu-acc.min.js'></script>
