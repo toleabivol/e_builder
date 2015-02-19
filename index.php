@@ -249,7 +249,18 @@
 				<button class="close-tooltip">Thanks for the tip</button>
 			</div>
 		</div>
-
+		<?php if($template==='santi') : ?>
+		<div class="rate-popup">
+			<span class="rate-close">x</span>
+			<h3>Are you happy with our item ?</h3>
+			<h5>Please give us a rate</h5>
+			<div class="rate-actions">
+				<a href="http://themeforest.net/downloads" class="rate-go" target="_blank">Rate</a>
+				<a href="#" class="rate-later">Later</a>
+				<a href="#" class="rate-never">Never</a>
+			</div>
+		</div>
+		<?php endif; ?>
 		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 		<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js'></script>
 		<script type='text/javascript' src='js/menu-acc.min.js'></script>

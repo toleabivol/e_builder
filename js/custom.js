@@ -683,13 +683,22 @@ jQuery(document).ready(function($) {
 		$('.tooltip-hint').hide();
 	}
 	//================Rate me popup===================================
-	var rate_popup = setTimeout(function(){
-			if( !$.cookie('si-builder-rated') && $.cookie('si-builder-ignored') ){
-				console.log('show popup');
-			}
-		},1800000);
-	$('.rate-now').click(function(){
-		
+	function rate_popup (){
+		if( !$.cookie('si-builder-rated') && !$.cookie('si-builder-rate-never') ){
+			console.log('show popup');
+			$('.rate-popup').fadeIn('slow');
+			clearInterval(popup_interval)
+		}
+	}
+	var popup_interval = setInterval(rate_popup,2000);//1800000
+
+	$('.rate-later,.rate-close').click(function(){
+		$('.rate-popup').fadeOut('slow');
+		popup_interval = setInterval(rate_popup,2000);
+	});
+	$('.rate-never').click(function(){
+		$.cookie('si-builder-rate-never',true,{expires:365});
+		$('.rate-popup').fadeOut('slow');
 	});
 	//===============template versioning=================================
 	if(template_v !== '0'){

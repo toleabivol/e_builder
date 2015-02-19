@@ -1699,3 +1699,13 @@ height:15px;
 #accordion-menu > li.style-list li .menu-input-input.bg-image-input{
 	width: 100%;
 }
+
+.rate-popup{
+	position: fixed;
+	top: 50px;
+	left: 30%;
+	background: #ccc;
+	padding: 20px;
+	z-index: 99999999;
+	display: none;
+}
