@@ -13,5 +13,5 @@ $database = 'e_builder';*/
 
 $host = 'localhost';
 $username = 'transfer';
-$password = '12SIdev12';
+$password = '12sidev12';
 $database = 'transfer_amthemes_builder_save_data';
