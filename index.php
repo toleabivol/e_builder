@@ -252,13 +252,15 @@
 		<?php if($template==='santi') : ?>
 		<div class="rate-popup">
 			<span class="rate-close">x</span>
-			<h3>Are you happy with our item ?</h3>
-			<h5>Please give us a rate</h5>
+			<h2>Are you happy with our item change?</h2>
+			<h5>Please give us a rating. It only takes <strong>10 seconds</strong> but it<br/> makes a world of difference for us. We always do our best to help you our <br/> so please <strong>help us out</strong>! </h5>
 			<div class="rate-actions">
-				<a href="http://themeforest.net/downloads" class="rate-go" target="_blank">Rate</a>
-				<a href="#" class="rate-later">Later</a>
-				<a href="#" class="rate-never">Never</a>
+				<a href="#" class="rate-later">Remind Me Later</a>
+				<a href="http://themeforest.net/downloads" class="rate-go" target="_blank">Rate Now!</a>
+				<a href="#" class="rate-never">Never Rate</a>
+				<div class="clearfix"></div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
 		<?php endif; ?>
 		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
