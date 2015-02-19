@@ -685,20 +685,23 @@ jQuery(document).ready(function($) {
 	//================Rate me popup===================================
 	function rate_popup (){
 		if( !$.cookie('si-builder-rated') && !$.cookie('si-builder-rate-never') ){
-			console.log('show popup');
 			$('.rate-popup').fadeIn('slow');
 			clearInterval(popup_interval)
 		}
 	}
 	var popup_interval = setInterval(rate_popup,2000);//1800000
 
-	$('.rate-later,.rate-close').click(function(){
+	$('.rate-later,.rate-close').click(function(event){
+		event.preventDefault();
 		$('.rate-popup').fadeOut('slow');
 		popup_interval = setInterval(rate_popup,2000);
+		return false;
 	});
-	$('.rate-never').click(function(){
+	$('.rate-never').click(function(event){
+		event.preventDefault();
 		$.cookie('si-builder-rate-never',true,{expires:365});
 		$('.rate-popup').fadeOut('slow');
+		return false;
 	});
 	//===============template versioning=================================
 	if(template_v !== '0'){
