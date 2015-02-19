@@ -724,6 +724,10 @@ jQuery(document).ready(function($) {
 	$('.bg-image-input').on('input',function(){
 		$('.builder-container > div').css('background-image',"url("+$(this).val()+")");
 	});
+	$('.remove-bg-image').click(function(){
+		$('.bg-image-input').val('');
+		$('.builder-container > div').css('background-image',"none");
+	})
 
 });
 

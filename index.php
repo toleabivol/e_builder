@@ -79,12 +79,15 @@
 						<li class='style-list upper-items'>
 							<a href='#'>Style</a>
 							<ul>
-								<li>
-									<a href="#">Background Image</a>
-									<div class="menu-input">
-										<input type='text' class='menu-input-input bg-image-input' placeholder="http://yourdomain.com/image.jpg">
-									</div>
-								</li>
+								<?php if(!empty($config->bg_image)) : ?>
+									<li>
+										<a href="#">Background Image</a>
+										<div class="menu-input">
+											<input type='text' class='menu-input-input bg-image-input' placeholder="http://yourdomain.com/image.jpg">
+											<button class="remove-bg-image">Remove Bg Image</button>
+										</div>
+									</li>
+								<?php endif; ?>
 								<li>
 									<a href='#'>Colors</a>
 									<?php foreach ($config->colorpickers as $name => $colorpicker) : 
