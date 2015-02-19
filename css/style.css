@@ -1723,6 +1723,9 @@ Rate
 .rate-close {
 	float: right;
 }
+.rate-close:hover {
+	cursor: pointer;
+}
 
 .rate-go {
 	width: 150px;
