@@ -535,6 +535,13 @@ jQuery(document).ready(function($) {
 	$('.builder-container').on('mouseleave','.edit-image-wrapper',function(e){
 		$('.edit-image-wrapper').appendTo('main').hide();
 	});
+	var fa_select = '<select id="fa-select"><option value="">Choose Icon</option>';
+	var fa_json = $.getJSON('fa/fa.json', function(json, textStatus) {
+		$.each(json, function(index, val) {
+			fa_select += '<option value="'+index+'">'+index+'</option>';
+		});
+		fa_select += '</select>';
+	});
 	$('.builder-container').on('click','.edit-image-button',function(e){
 		e.preventDefault();
 		$('.editing-image').removeClass('editing-image');
@@ -543,7 +550,11 @@ jQuery(document).ready(function($) {
 		$('.edit-modal').addClass('modal-editing-image');
 		$('.edit-modal .modal-header span').html('Edit Image');
 		$('.modal-body').html('<p><label>Image src</label><input id="image-src" type="text"></p>');
-		$('.modal-body').append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Image Height</label><input id="image-height" type="text"></p><p style="float: left; width: 220px; clear:right;"><label>Image Width</label><input id="image-width" type="text"></p>');
+		$('.modal-body')
+			.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Image Height</label><input id="image-height" type="text"></p><p style="float: left; width: 220px; clear:right;"><label>Image Width</label><input id="image-width" type="text"></p>')
+			.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Icon</label>' + fa_select + '</p>')
+			//.append('<p style="float: left; width: 220px; clear:right;"><label>Use Icon</label><input id="use-icon" type="checkbox" value="1"></p>')
+			.append('<p style="float: left; width: 220px; clear:right;"><label>Icon Color</label><input id="icon-color" type="text" value="#000000"></p>')
 		if($('.editing-image').parent('a').length){
 			$('.modal-body').append('<p style="margin-top: 20px;"><label>Link URL</label><input id="image-link" type="text"></p>');
 			$('#image-link').val($('.editing-image').parent('a').attr('href'));
@@ -566,6 +577,30 @@ jQuery(document).ready(function($) {
 		}
 		if($('#image-link').length){
 			$('.editing-image').parent('a').attr('href',$('#image-link').val())
+		}
+		if( $('#fa-select').val() !== '' ){
+			var icon = $('#fa-select').val().replace('fa-','');
+			var icon_size = $('#image-width').val();
+			var icon_color = $('#icon-color').val()
+			$.ajax({
+				async:false,
+				url: 'fa/index.php',
+				type: 'POST',
+				data: {
+					icon: icon,
+					size: icon_size,
+					color:icon_color
+				},
+			})
+			.done(function(result) {
+				console.log(result);
+				console.log(url + icon + '-' + icon_size + '-' + icon_color + '.png')
+				$('.editing-image').attr('src',url + '/fa/' + icon + '-' + icon_size + '-' + encodeURIComponent(icon_color) + '.png');
+			})
+			.fail(function() {
+				console.log("error");
+			})
+			
 		}
 		$('.editing-image').removeClass('editing-image');
 		$('.edit-modal,#mask').removeClass('show-modal');

@@ -22,6 +22,7 @@
 		<link rel='stylesheet' type='text/css' href='css/iris.min.css'>
 		<link rel="stylesheet" type='text/css' href="css/tinyeditor.css">
 		<link rel="stylesheet" type='text/css' href="css/materialPreloader.min.css">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/css/select2.min.css" rel="stylesheet" />
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
 		<title>SnoopyIndustries Email Builder</title>
 		<!-- fonts used for mails -->
@@ -38,6 +39,7 @@
 			var responsive_tablet = <?php echo !empty( $config->responsive_tablet ) ? "'{$config->responsive_tablet}'" : "false"?>;
 			var boxed_width = '<?php echo !empty( $config->boxed_width ) ? "{$config->boxed_width}" : "600px"?>';
 			var template_v = '<?php echo !empty($_GET['v']) ? $_GET['v'] : '0' ?>'
+			var url = location.protocol + '//' + location.host + location.pathname;
 		</script>
 		<?php if(!empty( $config->boxed_width  )) : 
 		$boxed_width = (int)$config->boxed_width === 600 ? '615px' : $config->boxed_width;
@@ -273,6 +275,7 @@
 		<script type='text/javascript' src="js/jquery.cookie.js"></script>
 		<script type='text/javascript' src="js/imagesloaded.pkgd.min.js"></script>
 		<script type='text/javascript' src="js/materialPreloader.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
 		<script type='text/javascript' src='js/custom.js'></script>
 	</body>
 </html>
