@@ -595,7 +595,7 @@ jQuery(document).ready(function($) {
 			.done(function(result) {
 				console.log(result);
 				console.log(url + icon + '-' + icon_size + '-' + icon_color + '.png')
-				$('.editing-image').attr('src',url + '/fa/' + icon + '-' + icon_size + '-' + encodeURIComponent(icon_color) + '.png');
+				$('.editing-image').attr('src',url + 'fa/' + icon + '-' + icon_size + '-' + encodeURIComponent(icon_color) + '.png');
 			})
 			.fail(function() {
 				console.log("error");
