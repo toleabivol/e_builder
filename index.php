@@ -252,7 +252,7 @@
 		
 		<div class="rate-popup">
 			<span class="rate-close">x</span>
-			<h2>Are you happy with our item change?</h2>
+			<h2>Are you happy with our item?</h2>
 			<h5>Please give us a rating. It only takes <strong>10 seconds</strong> but it<br/> makes a world of difference for us. We always do our best to help you our <br/> so please <strong>help us out</strong>! </h5>
 			<div class="rate-actions">
 				<a href="#" class="rate-later">Remind Me Later</a>

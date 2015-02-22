@@ -1775,3 +1775,12 @@ h5 {
     font-size: 14px;
     line-height: 20px;
 }
+
+.remove-bg-image {
+	margin: 20px auto 0;
+	background-color: #1fb5ad;
+	border-radius: 5px;
+	border:0;
+	color: #ffffff;
+	padding: 0 20px;
+}
