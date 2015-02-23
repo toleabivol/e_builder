@@ -191,10 +191,10 @@
 				</div>
 				<div class='item-controls-wrap'>
 					<div class='menu-item-control item-control'>
-						<a href='#' class='menu-item-control-trigger item-control-trigger' title="Move Element"></a>
+						<a href='#' class='menu-item-control-trigger item-control-trigger' title="Move Element">Move Element</a>
 					</div>
 					<div class='background-item-control item-control'>
-						<a href='#' class='background-item-control-trigger item-control-trigger' title="Edit Background Color"></a>
+						<a href='#' class='background-item-control-trigger item-control-trigger' title="Edit Background Color">Background Color</a>
 						<div class='item-control-content'>
 							<h3 class='item-control-title'>Choose Background Color</h3>
 							<input type='text' class='item-control-input color-picker-input' id='background-item-control-input' data-selector=".element-background-editing"/>
@@ -202,7 +202,7 @@
 						</div>
 					</div>
 					<div class='background-color-item-control item-control'>
-						<a href='#' class='background-color-item-control-trigger item-control-trigger' title="Edit Background Image"></a>
+						<a href='#' class='background-color-item-control-trigger item-control-trigger' title="Edit Background Image">Background Image</a>
 						<div class='item-control-content'>
 							<h3 class='item-control-title'>Background Image (Insert url)</h3>
 							<input type='text' class='item-control-input' id='element-bg-picker'/>

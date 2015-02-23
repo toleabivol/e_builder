@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #! /usr/bin/python
+=======
+#!/usr/bin/python
+>>>>>>> c27e8473f259e33b23f33851457c28eb971c0496
 
 #
 # font-awesome-to-png.py

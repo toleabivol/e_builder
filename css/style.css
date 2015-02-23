@@ -659,11 +659,16 @@ input.view-switch:checked ~ label:after{
 }*/
 .item-control-trigger{
 	position: relative;
-	width: 25px; height: 25px;
+	width: 175px; height: 30px;
 	border-radius: 5px;
 	display: inline-block;
 	float: left;
 	background: #a7a7a8;
+	font-size: 14px;
+	padding-left: 20px;
+	color: #ffffff;
+	font-family: "Lato",arial,sans-serif;
+	line-height: 30px;
 
 	transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
@@ -680,8 +685,7 @@ input.view-switch:checked ~ label:after{
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 0;
-	right: 0;
+	right: 10px;
 	bottom: 0;
 	margin: auto;
 	background: url(../img/sprite.png) no-repeat;
@@ -1422,7 +1426,7 @@ input[type=text] {
 
 .item-controls-wrap {
 	width: 25px;
-	left: -36px;
+	left: -176px;
 	top: -11px;
 	bottom: 0;
 	margin: auto 0;
