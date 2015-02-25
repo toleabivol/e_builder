@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #! /usr/bin/python
-=======
-#!/usr/bin/python
->>>>>>> c27e8473f259e33b23f33851457c28eb971c0496
 
 #
 # font-awesome-to-png.py
@@ -16,7 +12,7 @@
 
 import sys, argparse, re
 from os import path, access, R_OK
-import Image, ImageFont, ImageDraw
+from PIL import Image, ImageFont, ImageDraw
 
 # Support Unicode literals with both Python 2 and 3
 if sys.version < '3':
