@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/home/transfer/.env/env/bin/python
 
 #
 # font-awesome-to-png.py

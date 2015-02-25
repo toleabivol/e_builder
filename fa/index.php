@@ -8,5 +8,5 @@ if(file_exists("$icon-$size-$color.png")){
 	return "$icon.png";
 }
 
-var_dump(exec("./font-awesome-to-png.py --size $size --color '$color' --filename '$icon-$size-$color.png' $icon",$output,$return));
-var_dump($return) ?>
+var_dump(exec("./font-awesome-to-png.py --size $size --color '$color' --filename '$icon-$size-$color.png' $icon"));
+die();?>
