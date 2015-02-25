@@ -1788,3 +1788,7 @@ h5 {
 	color: #ffffff;
 	padding: 0 20px;
 }
+
+.select2-dropdown{
+	z-index: 99999999999;
+}

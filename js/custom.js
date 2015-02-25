@@ -551,10 +551,12 @@ jQuery(document).ready(function($) {
 		$('.edit-modal .modal-header span').html('Edit Image');
 		$('.modal-body').html('<p><label>Image src</label><input id="image-src" type="text"></p>');
 		$('.modal-body')
-			//.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Image Height</label><input id="image-height" type="text"></p><p style="float: left; width: 220px; clear:right;"><label>Image Width</label><input id="image-width" type="text"></p>')
-			//.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Icon</label>' + fa_select + '</p>')
+			.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Image Height</label><input id="image-height" type="text"></p><p style="float: left; width: 220px; clear:right;"><label>Image Width</label><input id="image-width" type="text"></p>')
+			.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Icon</label>' + fa_select + '</p>')
 			//.append('<p style="float: left; width: 220px; clear:right;"><label>Use Icon</label><input id="use-icon" type="checkbox" value="1"></p>')
-			//.append('<p style="float: left; width: 220px; clear:right;"><label>Icon Color</label><input id="icon-color" type="text" value="#000000"></p>')
+			.append('<p style="float: left; width: 220px; clear:right;"><label>Icon Color</label><input id="icon-color" type="text" value="#000000"></p>')
+		$('#icon-color').iris();
+		$('#fa-select').select2();
 		if($('.editing-image').parent('a').length){
 			$('.modal-body').append('<p style="margin-top: 20px;"><label>Link URL</label><input id="image-link" type="text"></p>');
 			$('#image-link').val($('.editing-image').parent('a').attr('href'));
