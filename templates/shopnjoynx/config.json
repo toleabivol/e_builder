@@ -1,0 +1,34 @@
+{
+	"title":"Shop&Joy - Responsive Email + Drag&Drop Builder",
+	"link":"http://themeforest.net/item/shopjoy-holiday-email-template-builder-acces/9655538?ref=am_themes",
+	"colorpickers" : {
+		"Black Text" : [{".dark_text":"color"},"#333332"],
+		
+		"White Text" : [{".white_text":"color"},"#ffffff"],
+		
+		"Grey Text" : [{".grey_text":"color"},"#6d6d6d"],
+		
+		"Yellow Txt" : [{".yellow_text":"color"},"#73787c"],
+		
+		"Button Text" : [{".button a":"color"},"#ffffff"],
+		
+		"Button Bg" : [{".button":"background-color"},"#ffffff"],
+		
+		"Brown Button Bg" : [{".bg_button":"background-color"},"#d69f5c"]
+		
+		
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","20","4","1"],
+		"Button Width" : [".button","width","px","60","200","100","5"],
+		"Button Height" : [".button","height","px","20","80","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"]
+	},
+	"purchase_codes":["test_purchase_si","eabf247d-eb94-4da9-88fe-4f3e99064e97"],
+	"header_color":"#ccc",
+	"no_layout_opt":true,
+	"def_layout":"full",
+	"boxed_width":"800px",
+	"responsive_tablet" : true
+}

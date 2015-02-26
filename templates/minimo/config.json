@@ -1,0 +1,37 @@
+{
+	"title":"Minimo - Responsive Email + Drag&Drop Builder",
+	"link":"http://themeforest.net/item/minimo-responsive-email-dragdrop-builder/10446994?ref=am_themes",
+	"builder_bg_color":"#ccc",
+	"colorpickers" : {
+		"Dark Text" : [{".dark_text":"color"},"#464646"],
+		
+		"Dark Heading" : [{".dark_heading":"color"},"#3b3d3c"],
+		
+		"White Text" : [{".white_text":"color"},"#ffffff"],
+		
+		"White Heading" : [{".white_heading":"color"},"#ffffff"],
+		
+		"Primary Color" : [{".bg_primary":"background-color"},"#01a97a"],
+		
+		"Secondary Color" : [{".bg_primary_darker":"background-color"},"#018b64"],
+
+		"Pricing Table Title" : [{".pricing_table_white":"color"},"#ffffff"],
+		
+		"Button Text" : [{".button a":"color"},"#000000"],
+		
+		"Button Bg" : [{".button":"background-color"},"#01a97a"]
+		
+		
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","20","4","1"],
+		"Button Width" : [".button","width","px","60","200","100","5"],
+		"Button Height" : [".button","height","px","20","80","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"]
+	},
+	"purchase_codes":["test_purchase_si",""],
+	"no_layout_opt":true,
+	"boxed_width":"800px",
+	"responsive_tablet" : true
+}

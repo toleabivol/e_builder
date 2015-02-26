@@ -1,0 +1,32 @@
+{
+	"title":"Santi - Corporate Responsive Email Template",
+	"link":"http://themeforest.net/item/santi-responsive-email-themebuilder-access/8168549?ref=am_themes",
+	"colorpickers" : {
+		"BG Color" : [{"> div":"background-color"},"#e64912"],
+
+		"Primary Color 1" : [{".primary1_bg":"background-color"},{".primary1_color":"color"},{".primary1_border":"border-color"},"#e64912"],
+		
+		"Primary Color 2" : [{".primary2_bg":"background-color"},{".primary2_color":"color"},{".primary2_border":"border-color"},"#e64912"],
+		
+		"Primary Color 3" : [{".primary3_bg":"background-color"},{".primary3_color":"color"},{".primary3_border":"border-color"},"#e64912"],
+		
+		"Link Color" : [{".link_color":"color"},"#f25555"],
+		
+		"Button Bg Color" : [{".button":"background-color"},"#f25555"],
+		
+		"Paragraph Color" : [{".text_color":"color"},"#f25555"]
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","10","4","1"],
+		"Button Width" : [".button","width","px","80","200","100","5"],
+		"Button Height" : [".button","height","px","20","60","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"],
+		"Spacing Height" : [".space_height","height","px","10","100","40","10"]
+	},
+	"purchase_codes":["test_purchase_si"],
+	"header_color":"#ccc",
+	"def_layout":"full",
+	"boxed_width":"700px",
+	"bg_image":true
+}

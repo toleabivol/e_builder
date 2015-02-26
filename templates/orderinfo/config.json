@@ -1,0 +1,28 @@
+{
+	"title":"OrderInfo - Order / Shipping Info Responsive Email Template",
+	"link":"http://themeforest.net/item/orderinfo-order-shipping-mail-builder-editor/8664027?ref=am_themes",
+	"colorpickers" : {
+		"Light Text" : [{".light_text":"color"},"#818181"],
+		
+		"Dark Text" : [{".dark_text":"color"},"#303030"],
+		
+		"White Text" : [{".white_text":"color"},"#ffffff"],
+		
+		"Blue Text" : [{".blue_text":"color"},"#42b1b2"],
+		
+		"Red Text" : [{".red_text":"color"},"#ff0000"],
+		
+		"Grey Background" : [{".dark_grey_bg":"background-color"},"#2f2f2f"],
+		
+		"Dark Bg" : [{".dark_bg":"background-color"},"#242424"]
+		
+	},
+	"sliders" : {
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"]
+	},
+	"purchase_codes":["test_purchase_si",""],
+	"header_color":"#ccc",
+	"no_layout_opt":true,
+	"def_layout": "full",
+	"responsive_tablet" : true
+}

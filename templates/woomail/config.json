@@ -1,0 +1,36 @@
+{
+	"title":"WooMail - WooCommerce Responsive Email",
+	"link":"http://themeforest.net/item/orderinfo-order-shipping-mail-builder-editor/8664027?ref=am_themes",
+	"colorpickers" : {
+		"Black Text" : [{".black_text":"color"},"#000000"],
+		
+		"White Text" : [{".white_text":"color"},"#ffffff"],
+		
+		"Grey Text" : [{".grey_text":"color"},"#4f595b"],
+		
+		"Blue Txt" : [{".blue_text":"color"},"#028b9e"],
+		
+		"Green Text" : [{".green_text":"color"},"#a8c727"],
+
+		"Red Text" : [{".red_text":"color"},"#fa3232"],
+		
+		"Button Bg" : [{".button":"background-color"},"#ffffff"],
+		
+		"Brown Button Bg" : [{".bg_button":"background-color"},"#d69f5c"]
+		
+		
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","20","4","1"],
+		"Button Width" : [".button","width","px","60","200","100","5"],
+		"Button Height" : [".button","height","px","20","80","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"]
+	},
+	"purchase_codes":["test_purchase_si",""],
+	"header_color":"#ccc",
+	"no_layout_opt":true,
+	"def_layout": "boxed",
+	"boxed_width":"640px",
+	"responsive_tablet" : false
+}

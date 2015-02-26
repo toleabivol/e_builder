@@ -1,0 +1,19 @@
+{
+	"title":"Shere - Corporate Responsive Email Template",
+	"link":"http://themeforest.net/item/shere-corporate-email-html-template-/6527721?ref=am_themes",
+	"colorpickers" : {
+		"Paragraph Color" : [{".paragraph":"color"},"#444445"],
+		"Heading Color":[{".heading":"color"},"#e74c3c"],
+		"Main Color": [{".theme_color_1":"background-color"},"#e74c3c"],
+		"Button Color":[{".button":"background-color"},"#e74c3c"]
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","10","4","1"],
+		"Button Width" : [".button","width","px","80","200","100","5"],
+		"Button Height" : [".button","height","px","20","60","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"],
+		"Spacing Height" : [".space_height","height","px","10","100","40","10"]
+	},
+	"purchase_codes":["purchase_test_si","custom_offer_1808201421129"]
+}
