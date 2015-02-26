@@ -535,7 +535,7 @@ jQuery(document).ready(function($) {
 	$('.builder-container').on('mouseleave','.edit-image-wrapper',function(e){
 		$('.edit-image-wrapper').appendTo('main').hide();
 	});
-	var fa_select = '<select id="fa-select"><option value="">Choose Icon</option>';
+	var fa_select = '<select id="fa-select"><option value="">Search Icon</option>';
 	var fa_json = $.getJSON('fa/fa.json', function(json, textStatus) {
 		$.each(json, function(index, val) {
 			fa_select += '<option value="'+index+'">'+index+'</option>';
@@ -552,7 +552,7 @@ jQuery(document).ready(function($) {
 		$('.modal-body').html('<p><label>Image src</label><input id="image-src" type="text"></p>');
 		$('.modal-body')
 			.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Image Height</label><input id="image-height" type="text"></p><p style="float: left; width: 220px; clear:right;"><label>Image Width</label><input id="image-width" type="text"></p>')
-			.append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Icon</label>' + fa_select + '</p>')
+			.append('<span class="feature" style="clear:both;">New Feature!!! <span style="color: #999999;">All available icons can be previewed</span> <a href="http://www.fontawesome.io/icons" target="_blank" style="color: #1fb5ad; text-decoration: none;">HERE</a></span><p  style="float: left; width: 220px; margin-right: 40px;"><label>Icon Generator</label>' + fa_select + '</p>')
 			//.append('<p style="float: left; width: 220px; clear:right;"><label>Use Icon</label><input id="use-icon" type="checkbox" value="1"></p>')
 			.append('<p style="float: left; width: 220px; clear:right;"><label>Icon Color</label><input id="icon-color" type="text" value="#000000"></p>')
 		$('#icon-color').iris();

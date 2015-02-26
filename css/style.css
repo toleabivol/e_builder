@@ -1792,3 +1792,20 @@ h5 {
 .select2-dropdown{
 	z-index: 99999999999;
 }
+
+/*
+************
+Icon Picker
+************
+*/
+.feature {
+	color: #f00;
+	float: left;
+    	margin-top: 20px;
+    	width: 100%;
+}
+
+.select2 {
+    clear: left !important;
+    width: 100% !important;
+}
