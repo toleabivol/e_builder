@@ -1,7 +1,0 @@
-.htaccess
-cache/*
-error_log
-fa/*
-!fa/index.php
-!fa/fa.json
-!fa/fontawesome-webfont.ttf
