@@ -561,12 +561,22 @@ jQuery(document).ready(function($) {
 			$('.modal-body').append('<p style="margin-top: 20px;"><label>Link URL</label><input id="image-link" type="text"></p>');
 			$('#image-link').val($('.editing-image').parent('a').attr('href'));
 		}
+		$('.modal-body').append('<button id="edit-delete-image">Delete</button>')
 		$('#image-src').val($('.editing-image').attr('src'));
 		$('#image-width').val($('.editing-image').width());
 		$('#image-height').val($('.editing-image').height());
 		$('.edit-modal,#mask').addClass('show-modal');
 		$('html').addClass('modal-opened')
 	});
+	$('body').on('click','.modal-editing-image #edit-delete-image',function(e){
+		if($('#image-link').length){
+			$('.editing-image').parent('a').remove();
+		}else{
+			$('.editing-image').remove();
+		}
+		$('.edit-modal,#mask').removeClass('show-modal');
+		$('html').removeClass('modal-opened');
+	})
 	$('body').on('click','.modal-editing-image .edit-save',function(e){
 		e.preventDefault();
 		add_undo($('.editing-image'),'image-editing',$('.editing-image').attr('src'),$('#image-src').val())
