@@ -889,7 +889,7 @@ input.view-switch:checked ~ label:after{
 	width: 100%;
 	margin: 0 auto;
 }
-.builder-container ul {
+.builder-container > div > ul {
 	list-style-type: none;
 	_margin: 0 40px;
 	padding: 0;
