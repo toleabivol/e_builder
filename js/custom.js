@@ -636,14 +636,20 @@ jQuery(document).ready(function($) {
 	$('.builder-container').on('click','.edit-link-button',function(e){
 		e.preventDefault();
 		$('.editing-link').removeClass('editing-link');
+		$('.editing-button').removeClass('editing-button');
+		$(this).parent().parent(".button").addClass('editing-button');
 		$(this).parent().siblings('a').addClass('editing-link');
 		$('.edit-link-wrapper').appendTo('main').hide();
 		$('.edit-modal').removeClass('modal-editing-text');
 		$('.edit-modal').addClass('modal-editing-link');
 		$('.edit-modal .modal-header span').html('Edit link');
-		$('.modal-body').html('<p><label>Link image</label><input id="link-src" type="text"></p><p><label>Link URL</label><input id="link-name" type="text"></p>');
+		$('.modal-body').html('<p><label>Button URL</label><input id="link-src" type="text"></p><p><label>Link URL</label><input id="link-name" type="text"></p>');
+		$('.modal-body').append('<p style="float: left; width: 220px; margin-right: 40px;"><label>Button Height</label><input id="link-height" type="text"></p><p style="float: left; width: 220px; clear:right;"><label>Button Width</label><input id="link-width" type="text"></p>')
+
 		$('#link-src').val($('.editing-link').attr('href'));
 		$('#link-name').val($('.editing-link').html().trim());
+		$('#link-width').val($('.editing-button').width());
+		$('#link-height').val($('.editing-button').height());
 		$('.edit-modal,#mask').addClass('show-modal');
 		$('html').addClass('modal-opened');
 	});
@@ -653,14 +659,23 @@ jQuery(document).ready(function($) {
 		$('.editing-link').attr('href',$('#link-src').val());
 		$('.editing-link').html($('#link-name').val());
 		$('.editing-link').removeClass('editing-link');
+		if( typeof $('#link-width').val() !== undefined ){
+			$('.editing-button').width($('#link-width').val()).removeAttr('width');;
+		}
+		if( typeof $('#link-height').val() !== undefined ){
+			$('.editing-button').height($('#link-height').val()).removeAttr('height');;
+		}
 		$('.edit-modal,#mask').removeClass('show-modal');
 		$('html').removeClass('modal-opened');
+		$('.editing-link').removeClass('editing-link');
+		$('.editing-button').removeClass('editing-button');
 	});
 	$('body').on('click','.modal-editing-link .edit-cancel',function(e){
 		e.preventDefault();
 		$('.edit-modal,#mask').removeClass('show-modal');
 		$('html').removeClass('modal-opened');
 		$('.editing-link').removeClass('editing-link');
+		$('.editing-button').removeClass('editing-button');
 	});
 
 	//===============Exporting=========================================
