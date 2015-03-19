@@ -1709,19 +1709,44 @@ height:15px;
 Rate
 **************
 */
-.rate-popup{
-	position: fixed;
-	top: 25%;
-	left: 40%;
-	background: #1fb5ad;
-	padding: 20px 20px;
-	z-index: 99999999;
-	display: none;
-	color: #ffffff !important;
-	border-radius: 5px;
-	box-shadow: 2px 2px 30px #000000;
-	text-align:center;
-	width: 600px;
+.rate-popup {
+    background: url("../img/Rate_us.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color: #5f5f5f;
+    display: none;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    height: 480px;
+    left: 35%;
+    padding: 120px 40px 0 365px;
+    position: fixed;
+    text-align: center;
+    top: 22%;
+    width: 772px;
+    z-index: 99999999;
+}
+
+.rate-popup h2 {
+	color: #262626;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 14px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.editables h5 {
+	color: #f00 !important;
+}
+
+.rate-popup h5 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	width: 340px;
+	margin:10px auto 15px;
 }
 
 .rate-close {
@@ -1731,41 +1756,26 @@ Rate
 	cursor: pointer;
 }
 
-.rate-go {
-	width: 150px;
-	color: #ffffff;
-	background-color: #7dd300;
-	height: 40px;
+.rate {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #f1f1f1;
+	font-weight: 500;
+	padding: 11px 25px;
+	line-height: 14px;
+	background-color: #9f9f9f;
 	border-radius: 5px;
-	text-align:center;
-	display: block;
-	float: left;
-	line-height: 40px;
-	margin-right: 20px;
 }
-.rate-later {
-	width: 150px;
-	color: #ffffff;
-	background-color: #a7a7a8;
-	height: 40px;
-	border-radius: 5px;
-	text-align:center;
-	display: block;
-	float: left;
-	line-height: 40px;
-	margin-right: 20px;
-}
+
 .rate-never {
-	width: 150px;
-	color: #ffffff;
-	background-color: #f00;
-	height: 40px;
-	border-radius: 5px;
-	text-align:center;
-	display: block;
-	float: left;
-	line-height: 40px;
+	background-color: #c73c24 !important;
 }
+
+.rate-go {
+	background-color: #3bac38 !important;
+}
+
+
 .rate-actions {
 	margin: 20px auto 20px;
 	display: inline-block;
@@ -1791,6 +1801,10 @@ h5 {
 
 .select2-dropdown{
 	z-index: 99999999999;
+}
+
+.tinyeditor-style {
+	display: none !important;
 }
 
 /*

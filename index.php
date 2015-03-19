@@ -28,9 +28,17 @@
 		<!-- fonts used for mails -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,300italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
 		<link href='http://fonts.googleapis.com/css?family=Jura:400,600,500' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+
+     	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+     	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+
+     	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 		<!-- ends fonts used for mails -->
 
 		<script type="text/javascript">
@@ -52,6 +60,7 @@
 		<?php endif; ?>
 	</head>
 	<body>
+		<?php include_once("g_analytics.php") ?>
 		<div id="mask"></div>
 		<div id="fakeLoader"></div>
 		<div class='left-nav-container open-left-menu'>
@@ -59,7 +68,7 @@
 			<header class='left-nav-fixed'>
 				<h1 class='logo-wrap'>
 					<a href='#'>
-						<img src='img/logo.png' alt='Am builder'/>
+						<img src='img/logo.png' alt='SnoopyIndustries'/>
 					</a>
 				</h1>
 				<nav>
@@ -152,7 +161,7 @@
 					<footer>
 						<a href='<?php echo $config->link ?>' target="_blank">Purchase</a>
 						<a href='http://themeforest.net/downloads' target="_blank" class="rate-button">Rate <span><b></b><b></b><b></b><b></b><b></b></span></a><br/>
-						<a href='http://youtu.be/-jaBpG8Helw' target="_blank">Video Tutorial</a>
+						<a href='http://snoopyindustries.com/email-documentation/' target="_blank">Documentation</a>
 					</footer>
 				</nav>
 			</header>
@@ -254,12 +263,13 @@
 		
 		<div class="rate-popup">
 			<span class="rate-close">x</span>
-			<h2>Are you happy with our item?</h2>
-			<h5>Please give us a rating. It only takes <strong>10 seconds</strong> but it<br/> makes a world of difference for us. We always do our best to help you our <br/> so please <strong>help us out</strong>! </h5>
+			<h2>Share the love!</h2>
+			<img src="img/stars.png" alt="" />
+			<h5>Hi there! Would you please rate us? It<br/> only takes 5 seconds, but it makes all<br/> the difference in the world for us. We<br/> try our best to help you out so please<br/> help us out too. </h5>
 			<div class="rate-actions">
-				<a href="#" class="rate-later">Remind Me Later</a>
-				<a href="http://themeforest.net/downloads" class="rate-go" target="_blank">Rate Now!</a>
-				<a href="#" class="rate-never">Never Rate</a>
+				<a href="#" class="rate rate-later">Rate Later</a>
+				<a href="http://themeforest.net/downloads" class="rate rate-go" target="_blank">Rate Now!</a>
+				<a href="#" class="rate rate-never">Never Rate</a>
 				<div class="clearfix"></div>
 			</div>
 			<div class="clearfix"></div>

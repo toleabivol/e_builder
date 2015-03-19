@@ -1,0 +1,36 @@
+{
+	"title":"Odyssey - Hypster Responsive Email Template",
+	"link":"http://themeforest.net/item/orderinfo-order-shipping-mail-builder-editor/8664027?ref=SnoopyIndustries",
+	"builder_bg_color":"#ccc",
+	"colorpickers" : {
+		"Dark Text" : [{".dark_text":"color"},"#464646"],
+		
+		"White Text" : [{".white_text":"color"},"#ffffff"],
+		
+		"Grey Text" : [{".grey_text":"color"},"#686868"],
+		
+		"Primary Color" : [{".primary_color":"color"},{".primary_bg":"background-color"},"#01a97a"],
+		
+		"Blue Button Text" : [{".blue_button a":"color"},"#ffffff"],
+		
+		"Blue Button Bg" : [{".blue_button":"background-color"},"#2a8fbd"],
+		
+		"Dark Button Text" : [{".border_button a":"color"},"#ffffff"],
+		
+		"Dark Button Bg" : [{".border_button":"background-color"},"#2a8fbd"]
+		
+	},
+	"sliders" : {
+		"Image Radius" : ["img","border-radius","px","0","10","3","1"],
+		"Button Radius" : [".button","border-radius","px","0","20","4","1"],
+		"Button Width" : [".button","width","px","60","200","100","5"],
+		"Button Height" : [".button","height","px","20","80","30","5"],
+		"Line Height" : ["tbody","line-height","px","8","25","11","1"]
+	},
+	"purchase_codes":["test_purchase_si",""],
+	"no_layout_opt":true,
+	"def_layout": "boxed",
+	"boxed_width":"800px",
+	"responsive_tablet" : true
+	
+}
