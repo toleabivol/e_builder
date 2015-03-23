@@ -22,7 +22,8 @@
 		<link rel='stylesheet' type='text/css' href='css/iris.min.css'>
 		<link rel="stylesheet" type='text/css' href="css/tinyeditor.css">
 		<link rel="stylesheet" type='text/css' href="css/materialPreloader.min.css">
-		<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/css/select2.min.css" rel="stylesheet" />
+		<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/css/select2.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
 		<title>SnoopyIndustries Email Builder</title>
 		<!-- fonts used for mails -->
@@ -285,7 +286,7 @@
 		<script type='text/javascript' src="js/jquery.cookie.js"></script>
 		<script type='text/javascript' src="js/imagesloaded.pkgd.min.js"></script>
 		<script type='text/javascript' src="js/materialPreloader.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/js/select2.min.js"></script>
 		<script type='text/javascript' src='js/custom.js'></script>
 	</body>
 </html>

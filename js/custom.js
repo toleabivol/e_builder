@@ -546,6 +546,9 @@ jQuery(document).ready(function($) {
 		});
 		fa_select += '</select>';
 	});
+	function icon_format(icon) {	    
+		return "<i class='fa "+icon.text+"'></i> &nbsp;|&nbsp;" + icon.text;
+	}
 	$('.builder-container').on('click','.edit-image-button',function(e){
 		e.preventDefault();
 		$('.editing-image').removeClass('editing-image');
@@ -560,7 +563,11 @@ jQuery(document).ready(function($) {
 			//.append('<p style="float: left; width: 220px; clear:right;"><label>Use Icon</label><input id="use-icon" type="checkbox" value="1"></p>')
 			.append('<p style="float: left; width: 220px; clear:right;"><label>Icon Color</label><input id="icon-color" type="text" value="#000000"></p>')
 		$('#icon-color').iris();
-		$('#fa-select').select2();
+
+		$('#fa-select').select2({
+			templateResult: icon_format,
+			escapeMarkup: function(m) { return m; },
+		});
 		if($('.editing-image').parent('a').length){
 			$('.modal-body').append('<p style="margin-top: 20px;"><label>Link URL</label><input id="image-link" type="text"></p>');
 			$('#image-link').val($('.editing-image').parent('a').attr('href'));
