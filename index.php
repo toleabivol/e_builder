@@ -2,7 +2,7 @@
 	if(isset($_GET['theme']))
 		$template = $_GET['theme'];
 	else
-		$template = 'marco';
+		$template = 'strato';
 	$elements = file_get_contents('templates/' . $template . '/html/elements.html');
 	$head = file_get_contents('templates/' . $template . '/html/head.html');
 	if(file_exists('templates/' . $template . '/html/footer.html')){
